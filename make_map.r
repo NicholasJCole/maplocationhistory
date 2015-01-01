@@ -12,11 +12,11 @@ map("state", boundary = FALSE, col="gray", add = TRUE)
 # add GPS coords
 for (indexnum in c(1:length(gps_coords$V1))){
     points(gps_coords$V1[indexnum], gps_coords$V2[indexnum], col ="steelblue2", type = "p", pch = 19, cex = .75)
-    print(indexnum)
 }
 
 ###### Put title and legend ######
 title(main = "Travel in 2014")
+legend("bottomleft", legend = c("Cities", "GPS Coordinates"), title = "Legend", fill = c("red", "steelblue2"), cex = 0.75)
 
 #### How to draw lines between ####
 #### http://flowingdata.com/2011/05/11/how-to-map-connections-with-great-circles/
