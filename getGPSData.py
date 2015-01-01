@@ -1,6 +1,8 @@
 import re
 import csv
 
+# change the name of the file being open in both open functions
+# this is very manual, but quick and dirty
 
 f = open('history-Aug-3-Sep1.kml', 'r')
 contents = f.read()
